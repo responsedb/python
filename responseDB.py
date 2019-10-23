@@ -29,14 +29,14 @@ class Dataset:
         self.url = url
     def read(self):
         self.data = pd.read_csv(self.url, index_col = 0)
-        return self.data
+        return self
     def describe(self):
         return self.data.describe()
 #    def normalize(self):
 #        self.norm = preprocessing.scale(self.data)
 #        return self.norm
     def normalize(self):
-        x = self.data 
+        x = self.data
         min_max_scaler = preprocessing.MinMaxScaler()
         x_scaled = min_max_scaler.fit_transform(x)
         df = pd.DataFrame(x_scaled)
@@ -45,15 +45,15 @@ class Dataset:
 responses = {
     'open_ended': {
         'stats101-2019-03-07.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-03-07.csv'),
-        'stats101-2019-03-28.csv':	Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-03-28.csv'),
-        'stats101-2019-05-02.csv':	Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-05-02.csv'),
-        'stats101-2019-07-04.csv':	Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-07-04.csv'),
-        'stats101-2019-07-25.csv':	Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-07-25.csv')
+        'stats101-2019-03-28.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-03-28.csv'),
+        'stats101-2019-05-02.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-05-02.csv'),
+        'stats101-2019-07-04.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-07-04.csv'),
+        'stats101-2019-07-25.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-07-25.csv')
         },
     'scale': {
 
     },
-    'dichotoumus':{
+    'dichotomous':{
 
     }
     }
@@ -63,6 +63,6 @@ print(responses_type)
 
 db = responses['open_ended']['stats101-2019-03-07.csv'].read()
 
-print(db)
+print(db.normalize())
 #
 
