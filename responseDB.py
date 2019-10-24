@@ -49,7 +49,8 @@ responses = {
         'stats101-2019-05-02.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-05-02.csv'),
         'stats101-2019-07-04.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-07-04.csv'),
         'stats101-2019-07-25.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-07-25.csv'),
-        'stats101-2019-23-10.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-23-10.csv')
+        'stats101-2019-23-10.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-23-10.csv'),
+        'stats101-2019-24-10.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-24-10.csv')
         },
     'scale': {
 
