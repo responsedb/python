@@ -51,7 +51,9 @@ responses = {
         'stats101-2019-07-25.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-07-25.csv'),
         'stats101-2019-23-10.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-23-10.csv'),
         'stats101-2019-24-10.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-24-10.csv'),
-        'stats101-2019-25-10.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-25-10.csv')
+        'stats101-2019-25-10.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-25-10.csv'),
+        'stats101-2019-26-10.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-26-10.csv'),
+        'stats101-2019-27-10.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-27-10.csv')
         },
     'scale': {
 
@@ -64,7 +66,7 @@ responses_type = list(responses.keys())
 
 print(responses_type)
 
-db = responses['open_ended']['stats101-2019-25-10.csv'].read()
+db = responses['open_ended']['stats101-2019-27-10.csv'].read()
 
 print(db.normalize())
 #
