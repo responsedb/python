@@ -14,9 +14,9 @@ The purpose of this package is the implementation of codes that allow easy acces
 
 Below is the official repository link for internally avaible databases. They are classified into the following types:
 <ul>
-<li> **open-ended ;** </li>
-<li> **scale ;** </li>
-<li> **dichotomous.** </li>
+<li> <strong> open-ended ;<strong> </li>
+<li> <strong> scale ;<strong> </li>
+<li> <strong> dichotomous. <strong> </li>
 </ul>
 
 ### Functions
