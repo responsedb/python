@@ -73,8 +73,7 @@ responses_type = list(responses.keys())
 
 print(responses_type)
 
-db = responses['open_ended']['stats101-2019-02-11.csv'].read()
+db = responses['open_ended']['stats101-2019-03-11.csv'].read()
 
 print(db.normalize())
-#
 
