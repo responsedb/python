@@ -13,11 +13,11 @@ The purpose of this package is the implementation of codes that allow easy acces
 ### Databases
 
 Below is the official repository link for internally avaible databases. They are classified into the following types:
-<ul>
-<li> <strong> open-ended ;<strong> </li>
-<li> <strong> scale ;<strong> </li>
-<li> <strong> dichotomous. <strong> </li>
-</ul>
+</p>
+*open-ended ;</p>
+*scale ;</p>
+*dichotomous. </p>
+</p>
 
 ### Functions
 
@@ -27,7 +27,7 @@ Some basic uses of the package, how :
 <li> responses_types </li>
 <ul>
 
-'''
-for i in range(1, 10):
-    print('pedin_{}'.format(i))
-'''
+<div class = "jeb_cell">
+<div class = "">
+<div class = "input">
+<div class = "jeb_cell">
