@@ -41,17 +41,17 @@ Some basic uses of the package, how :
 
 <span class="n">test</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 </div>
-</div>
-</div>
-
 </div>
 </div>
 
 <div class="jb_cell">
 
+
+## Author 
+</p>
+__Manuel Ferreira Junior__
+</p>
+__Telmo de Menezes Silva Filho__

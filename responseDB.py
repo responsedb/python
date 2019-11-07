@@ -12,6 +12,8 @@ from sklearn import preprocessing
 class DatasetManager:
     def __init__(self, responses):
         self.response = responses
+    def type(self):
+        return responses.keys()
     def read(self):
         self.data = responses[self.response]
         for key in self.data.keys():
@@ -27,6 +29,8 @@ class DatasetManager:
 class Dataset:
     def __init__(self, url):
         self.url = url
+    def type(self):
+        return responses.keys()
     def read(self):
         self.data = pd.read_csv(self.url, index_col = 0)
         return self
@@ -69,11 +73,10 @@ responses = {
 
     }
     }
-responses_type = list(responses.keys())
 
-print(responses_type)
+l = Dataset('responses')
 
 db = responses['open_ended']['stats101-2019-03-11.csv'].read()
 
-print(db.normalize())
+print(l.type())
 
