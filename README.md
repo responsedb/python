@@ -7,11 +7,11 @@ The purpose of this package is the implementation of codes that allow easy acces
 
 ## Importing Module
 
-'''Python
+~~~Python
 
 import responsedb as rdb
 
-'''
+~~~
 
 ## Usage
 
