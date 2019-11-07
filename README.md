@@ -26,34 +26,10 @@ Some basic uses of the package, how :
 <ul> 
 <li> responses_types </li>
 <ul>
-<div class="jb_cell">
+~~~python
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+for i in range(0, 10):
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="mi">10</span>
+~~~
 
-<span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
-    <span class="n">t</span> <span class="o">=</span> <span class="mi">5</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-
-<span class="n">test</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-
-## Author 
-
-_Manuel Ferreira Junior_
-
-
-_Telmo de Menezes Silva Filho_
-
+## 
