@@ -46,19 +46,6 @@ Some basic uses of the package, how :
     </div>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="jb_output_wrapper }}">
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>10
-10
-</pre>
-</div>
-</div>
 </div>
 </div>
 </div>
