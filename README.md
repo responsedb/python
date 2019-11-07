@@ -21,7 +21,13 @@ Below is the official repository link for internally avaible databases. They are
 
 ### Functions
 
-<div class = 'jb_cell'>
+Some basic uses of the package, how :
 
+<ul> 
+<li> responses_types </li>
+<ul>
 
-<div class = 'jb_cell'> 
+'''
+for i in range(1, 10):
+    print('pedin_{}'.format(i))
+'''
