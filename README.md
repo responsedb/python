@@ -6,7 +6,7 @@ This repository contains the python code for responseDB
 
 ## About 
 
-The purpose of this package is the implementation of codes that allow easy access to certain data, as well as its free manipulation, using response databases from different sources, being used to implement **Item Response Theory** models **(IRT)** for testing.
+The purpose of this package is the implementation of codes that allow easy access to certain data, as well as its free manipulation, using response databases from different sources, being used to implement _**Item Response Theory**_ models _**(IRT)**_ for testing.
 
 ## Importing Module
 
