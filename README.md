@@ -51,7 +51,9 @@ Some basic uses of the package, how :
 
 
 ## Author 
-</p>
+
 _Manuel Ferreira Junior_
-</p>
+
+
 _Telmo de Menezes Silva Filho_
+
