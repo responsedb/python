@@ -28,9 +28,7 @@ Below is the official repository link for internally avaible databases. They are
 
 Some basic uses of the package, how :
 
-<ul> 
 <li> .types() </li>
-<ul>
 
 ~~~Python
 
