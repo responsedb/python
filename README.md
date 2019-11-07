@@ -20,7 +20,8 @@ import responsedb as rdb
 
 ### Databases
 
-Below is the official repository link for internally avaible databases. They are classified into the following types:
+Here is the <a href = 'https://github.com/responsedb/datasets'> official repository </a> link for internally avaible databases. They are classified into the following types:
+
 <ul>
 <li> <strong> open-ended ;<strong> </li>
 <li> <strong> scale ;<strong> </li>
