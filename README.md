@@ -22,17 +22,19 @@ import responsedb as rdb
 
 Here is the <a href = 'https://github.com/responsedb/datasets'> official repository </a> link for internally avaible databases. They are classified into the following types:
 
-<ul>
-<li> <strong> open-ended ;<strong> </li>
-<li> <strong> scale ;<strong> </li>
-<li> <strong> dichotomous. <strong> </li>
-</ul>
+
+- open-ended ;
+
+- scale ;
+
+- dichotomous.
+
 
 ### Functions
 
 Some basic uses of the package, how :
 
-<li> .types() </li>
+- **.types()**
 
 ~~~Python
 
@@ -40,7 +42,7 @@ rdb.Dataset('responses').type()
 
 ~~~
 
-<li> Viewing the database for a type </li>
+- **Viewing the database for a type** 
 
 ~~~Python
 
@@ -48,7 +50,7 @@ print(rdb.response['open_ended'].keys())
 
 ~~~
 
-<li> Selecting a specific basis </li>
+- **Selecting a specific basis** 
 
 ~~~Python
 db = rdb.response['open_ended']['stats101-2019-03-11.csv'].data
@@ -58,7 +60,7 @@ print(db)
 
 **Some Functions**
 
-<li> .normalize() : data normalization </li>
+- **.normalize()** : data normalization 
 
 ~~~Python
 
@@ -68,7 +70,7 @@ print(db.normalize())
 ~~~
 
 
-<li> .describe() : descriptive data</li>
+- **.describe()** : descriptive data
 
 ~~~Python
 

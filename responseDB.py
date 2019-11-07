@@ -11,11 +11,11 @@ from sklearn import preprocessing
  
 class DatasetManager:
     def __init__(self, responses):
-        self.response = responses
+        self.responses = responses
     def type(self):
-        return responses.keys()
+        return self.responses.keys()
     def read(self):
-        self.data = responses[self.response]
+        self.data = responses[self.responses]
         for key in self.data.keys():
         	self.data[key].read()
         return self
@@ -76,7 +76,7 @@ responses = {
 
 l = Dataset('responses')
 
-db = responses['open_ended']['stats101-2019-03-11.csv'].read()
+db = responses['open_ended']['stats101-2019-03-11.csv']
 
-print(Dataset('responses'))
+print(db.data)
 
