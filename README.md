@@ -26,10 +26,10 @@ Some basic uses of the package, how :
 <ul> 
 <li> responses_types </li>
 <ul>
-~~~python
+
+~~~Python
 
 for i in range(0, 10):
 
 ~~~
 
-## 
