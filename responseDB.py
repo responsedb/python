@@ -78,5 +78,5 @@ l = Dataset('responses')
 
 db = responses['open_ended']['stats101-2019-03-11.csv'].read()
 
-print(l.type())
+print(Dataset('responses'))
 
