@@ -23,6 +23,12 @@ Below is the official repository link for internally avaible databases. They are
 
 Some basic uses of the package, how :
 
+'''
+
+for i in range(0,10):
+
+'''
+
 <ul> 
 <li> responses_types </li>
 <ul>
