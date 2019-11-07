@@ -38,9 +38,7 @@ rdb.Dataset('responses').type()
 
 ~~~
 
-<ul>
 <li> Viewing the database for a type </li>
-<ul>
 
 ~~~Python
 
@@ -48,9 +46,7 @@ print(rdb.response['open_ended'].keys())
 
 ~~~
 
-<ul>
 <li> Selecting a specific basis </li>
-<ul>
 
 ~~~Python
 db = rdb.response['open_ended']['stats101-2019-03-11.csv'].data
@@ -60,9 +56,7 @@ print(db)
 
 **Some Functions**
 
-<ul>
 <li> .normalize() : data normalization </li>
-<ul>
 
 ~~~Python
 
@@ -71,9 +65,8 @@ db = rdb.response['open_ended']['stats101-2019-03-11.csv']
 print(db.normalize())
 ~~~
 
-<ul>
+
 <li> .describe() : descriptive data</li>
-<ul>
 
 ~~~Python
 
