@@ -52,6 +52,6 @@ Some basic uses of the package, how :
 
 ## Author 
 </p>
-__Manuel Ferreira Junior__
+_Manuel Ferreira Junior_
 </p>
-__Telmo de Menezes Silva Filho__
+_Telmo de Menezes Silva Filho_
