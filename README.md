@@ -13,11 +13,11 @@ The purpose of this package is the implementation of codes that allow easy acces
 ### Databases
 
 Below is the official repository link for internally avaible databases. They are classified into the following types:
-</p>
-*open-ended ;</p>
-*scale ;</p>
-*dichotomous. </p>
-</p>
+<ul>
+<li> <strong> open-ended ;<strong> </li>
+<li> <strong> scale ;<strong> </li>
+<li> <strong> dichotomous. <strong> </li>
+</ul>
 
 ### Functions
 
