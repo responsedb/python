@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
-
+import os as os
 #class DatasetManager:
 #    def __init__(self, response_type):
 #        self.response_type = response_type
@@ -31,20 +31,27 @@ class Dataset:
         self.url = url
     def type(self):
         return responses.keys()
-    def read(self):
-        self.data = pd.read_csv(self.url, index_col = 0)
+    def read(self, folder = 'datasets'):
+        filename = self.url.split('/')[-1]
+        try:
+            self.data = pd.read_csv(os.path.join(folder, filename), index_col=0)
+        except:
+            self.data = pd.read_csv(self.url, index_col=0)
+            if not os.path.exists(folder):
+                os.makedirs(folder)
+            self.data.reset_index().to_csv(os.path.join(folder, filename), index=None)
+        
         return self
     def describe(self):
         return self.data.describe()
-#    def normalize(self):
-#        self.norm = preprocessing.scale(self.data)
-#        return self.norm
+
     def normalize(self):
         x = self.data
         min_max_scaler = preprocessing.MinMaxScaler()
-        x_scaled = min_max_scaler.fit_transform(x)
-        df = pd.DataFrame(x_scaled)
-        return df
+        x_scaled = min_max_scaler.fit_transform(x.values)
+        self.data = pd.DataFrame(data=x_scaled, columns=self.data.columns, index=self.data.index)
+        return self
+
 
 responses = {
     'open_ended': {
@@ -78,5 +85,5 @@ l = Dataset('responses')
 
 db = responses['open_ended']['stats101-2019-03-11.csv']
 
-print(db.data)
+print(db.read().data)
 
