@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn import preprocessing
+from sklearn.preprocessing import MinMaxScaler
 import os as os
 
 class DatasetManager:
@@ -96,7 +96,7 @@ class Dataset:
             self.data
         '''
         x = self.data
-        min_max_scaler = preprocessing.MinMaxScaler()
+        min_max_scaler = MinMaxScaler()
         x_scaled = min_max_scaler.fit_transform(x.values)
         self.data = pd.DataFrame(data=x_scaled, columns=self.data.columns, index=self.data.index)
         return self.data
