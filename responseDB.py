@@ -3,6 +3,28 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import os as os
 
+#import responseDB
+
+#responseDB.list_datasets
+
+#           read_dataset
+
+def list_datasets(dataset_type=None):
+    if dataset_type:
+        return _responses
+    else:
+        return _responses[dataset_type]
+
+def read_dataset(dataset_type, name=None):
+
+    if name:
+        return _responses[dataset_type][name]
+    else:
+        return _responses[dataset_type]
+
+
+
+
 class DatasetManager:
     def __init__(self, responses):
         self.responses = responses
@@ -11,7 +33,7 @@ class DatasetManager:
         return self.responses.keys()
 
     def read(self):
-        self.data = responses[self.responses]
+        self.data = _responses[self.responses]
         for key in self.data.keys():
         	self.data[key].read()
         return self
@@ -39,7 +61,8 @@ class Dataset:
 
             responses.keys()
         '''
-        return responses.keys()
+        return _responses.keys()
+
     def read(self, folder = 'datasets'):
         '''
         This method has as argument 'folder', by default folder = 'datasets', has the function to 
@@ -65,6 +88,7 @@ class Dataset:
             self.data.reset_index().to_csv(os.path.join(folder, filename), index=None)
         
         return self
+
     def describe(self):
         '''
         This method has as function returns the descriptive of the data belonging to the object.
@@ -102,7 +126,7 @@ class Dataset:
         return self.data
 
 
-responses = {
+_responses = {
     'open_ended': {
         'stats101-2019-03-07.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-03-07.csv'),
         'stats101-2019-03-28.csv': Dataset('https://raw.githubusercontent.com/responsedb/datasets/master/open-ended/error-counts/stats101-2019-03-28.csv'),
@@ -130,9 +154,9 @@ responses = {
     }
     }
 
-db = responses['open_ended']['stats101-2019-03-11.csv']
+db = _responses['open_ended']['stats101-2019-03-11.csv']
 
-print(db.type())
+print(read_dataset('open_ended', 'stats101-2019-29-10.csv').read().normalize())
 
 
 
