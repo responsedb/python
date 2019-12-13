@@ -23,8 +23,6 @@ def read_dataset(dataset_type, name=None):
         return _responses[dataset_type]
 
 
-
-
 class DatasetManager:
     def __init__(self, responses):
         self.responses = responses
