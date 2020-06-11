@@ -1,8 +1,8 @@
-# responseDB
+# responsedb
 
 
 # Python Code
-This repository contains the python code for responseDB
+This repository contains the python code for responsedb
 
 ## About 
 
